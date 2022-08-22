@@ -12,7 +12,25 @@ package step1_06.loop;
 public class LoopEx12_정답 {
 
 	public static void main(String[] args) {
+		int i = 1;
 		
+		while (true) {		
+			if (i > 50) {
+				break;
+			}
+			else {
+				if ( (i/10) > 0 && (i/10) % 3 == 0) {
+				System.out.print("짝 ");
+				}
+				else if((i%10) != 0 && (i%10) % 3 == 0) {
+					System.out.print("짝 ");
+				}
+				else {
+					System.out.print(i + " ");
+				}
+			}
+			i++;
+		}
 	}
 
 }
