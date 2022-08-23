@@ -47,6 +47,7 @@ public class LoopEx28_정답 {
 
 		}
 		
+		System.out.println();
 
 		
 		/*
@@ -56,15 +57,18 @@ public class LoopEx28_정답 {
 		 * ###
 		 */
 		
-		for (i = 1; i <= 3-i ; i++) {
-			for (j = 1; j <= 3-i; j++)
-			{
+		for (i = 1; i <= 3; i++) {
+			for (j = i; j < 3; j++) {
 				System.out.print(" ");
-				
 			}
-			System.out.println("");
+			for (k = 0; k < i; k++) {
+				System.out.print("#");
+			}
+			System.out.println();
 		}
 		
+		
+		System.out.println();
 		
 		/*
 		 * 문제 3)
@@ -74,6 +78,15 @@ public class LoopEx28_정답 {
 		 */
 
 		
+		for (i = 3; i > 0; i--) {
+			for (j = 0; j < i; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println();
 		/*
 		 * 문제 4)
 		 * ###
@@ -82,13 +95,37 @@ public class LoopEx28_정답 {
 		 */
 
 		
+		for (i = 3; i > 0; i--) {
+			for (k = 0; k < 3-i; k++) {
+				System.out.print(" ");
+			}
+			for (j = i; j > 0; j--) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+		
+		System.out.println();
+		
 		/*
 		 * 문제 5)
 		 * @##
 		 * @@#
 		 * @@@
 		 */
+		
+		
+		for (i = 0; i < 3; i++) {
+			for (k = 0; k <= i; k++) {
+				System.out.print("@");
+			}
+			for (j = 1; j < 3-i; j++) {
+				System.out.print("#");
+			}
+			System.out.println();
+		}
 
+		System.out.println();
 		
 		/*
 		 * 문제 6)
@@ -96,6 +133,17 @@ public class LoopEx28_정답 {
 		 *  ###
 		 * #####
 		 */
+		
+		
+		for (i = 0; i <= (5/2); i++) {
+			for (j = i; j < (5/2); j++)
+			{
+				System.out.print(" ");
+			}
+			for (k = 1; k <= ; k+=2) {
+				
+			}
+ 		}
 
 		/*
 		 * 문제 7)

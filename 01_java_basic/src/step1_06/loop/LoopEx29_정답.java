@@ -13,7 +13,14 @@ package step1_06.loop;
 public class LoopEx29_정답 {
 
 	public static void main(String[] args) {
+	
+		System.out.print("입력 : ");
+		int num = scan.
+		
+		
 		
 	}
+	
+	
 	
 }
