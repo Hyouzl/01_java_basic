@@ -140,9 +140,7 @@ public class LoopEx28_정답 {
 			{
 				System.out.print(" ");
 			}
-			for (k = 1; k <= ; k+=2) {
-				
-			}
+		
  		}
 
 		/*

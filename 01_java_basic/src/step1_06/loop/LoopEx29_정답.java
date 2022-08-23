@@ -1,5 +1,7 @@
 package step1_06.loop;
 
+import java.util.Scanner;
+
 /*
  * # 소수찾기[2단계]
  * 
@@ -14,9 +16,23 @@ public class LoopEx29_정답 {
 
 	public static void main(String[] args) {
 	
-		System.out.print("입력 : ");
-		int num = scan.
+		Scanner scan = new Scanner(System.in);
 		
+		System.out.print("입력 : ");
+		
+		int num = scan.nextInt();
+		
+
+		
+		for (int i = 2; i <= num; i++) {
+			int cnt = 0;
+			for (int j = 1; j <= i; j++) {
+				if (i % j == 0) cnt++;
+			}
+			if (cnt == 2) {
+				System.out.print(i + ", ");
+			}
+		}
 		
 		
 	}
