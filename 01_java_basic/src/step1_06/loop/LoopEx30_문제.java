@@ -22,6 +22,33 @@ public class LoopEx30_문제 {
 
 	public static void main(String[] args) {
 
+		int i = 1;
+		int turn = 1;
+		while (true) {
+			if (turn == 6) {
+				break;
+			}
+			else if ( (i-1) % 5 == 0) {
+				System.out.println();
+				turn++;
+				if (turn % 2 == 0) {
+					i += 5;
+				}
+			}
+			else {
+				if (turn % 2 != 0) {
+					System.out.print(i + "\t");
+					i++;
+				}
+				else {
+					System.out.print((i+5) + "\t");
+					i--;
+				}
+			}
+
+		}
+		
+		
 	}
 
 }

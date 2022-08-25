@@ -22,6 +22,8 @@ public class LoopEx30_정답 {
 
 	public static void main(String[] args) {
 
+		
+		
 	}
 
 }
