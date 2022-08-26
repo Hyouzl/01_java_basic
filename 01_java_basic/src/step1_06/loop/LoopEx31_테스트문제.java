@@ -25,6 +25,62 @@ public class LoopEx31_테스트문제 {
 
 	public static void main(String[] args) {
 
+		System.out.print("정답 1) : ");
+			
+		
+		int num = 1;
+		for (int i = 1; num < 100; i++) {	
+			num = i * 9;
+			if (num / 10 == 6) {
+				System.out.println(num);
+				break;
+			}
+		}
+		
+		System.out.print("정답 2) : ");
+		
+		int max = 0;
+		for (int i = 1; i <= 150; i++) {
+			if ( i % 8 == 5) {
+				max = i;
+			}
+		}
+		
+		System.out.println(max);
+		
+		System.out.print("정답 3) : ");
+		
+		int cnt = 0;
+		
+		int num2 = 0;
+		System.out.print("(");
+		
+		for (int i = 1; num2 < 100; i++) {
+			if (num2 > 50) {
+				cnt++;
+				System.out.print(num2);
+				if (i * 9 > 100) break;
+				else System.out.print(" ");
+			}
+			num2 = i * 9;
+		}
+		System.out.print(")");
+		System.out.println(" " + cnt + "개");
+	
+		System.out.print("정답 4) : ");
+		
+		int num3 = 0;
+		for (int i = 1; num3 < 1000; i++) {
+			num3 = i * 28;
+			if ( (i+1) * 28 > 1000) { 
+				break;
+			}
+		}
+		System.out.println(num3);
+		
+		System.out.print("정답 5) : ");
+		
+		
 	}
 
 }

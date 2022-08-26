@@ -24,6 +24,21 @@ public class LoopEx32_테스트문제 {
 		
 		System.out.print("Enter Number ? ");
 		int getNumber = scan.nextInt();
+		int num;
+
+		for (int i = getNumber+1;	; i++) {
+			int cnt = 0;
+			for (int j = 1; j <= i; j++) {
+				if (i % j == 0) {
+					cnt++;
+				}
+			}
+			if (cnt == 2) {
+				System.out.println(getNumber + "보다 큰 첫번째 소수는 " + i);
+				break;
+			}
+		}
+		
 		
 		scan.close();
 		

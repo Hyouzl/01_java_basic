@@ -36,9 +36,37 @@ public class LoopEx33_테스트문제 {
 		Scanner scan = new Scanner(System.in);
         
 		System.out.print("key값 입력 : ");
-		int key = scan.nextInt();
- 
-
+		int key = scan.nextInt();	
+		int cnt = 0;
+		int len = 0;
+		int idx = 0;
+		
+		while (true) {
+			System.out.print("입력 : ");
+			int num = scan.nextInt();
+			if (num == - 1) break;
+			
+			else {
+				
+				if (key == num) {
+					cnt++;
+					len++;
+					if (cnt > 1) {
+						continue;
+					}
+					else idx = len;
+					
+				}
+				else {
+					len++;
+				}
+				
+			}
+			
+ 		}
+		
+		System.out.println("key값 " + key + "가 첫번째로 나타난 것은 " + idx + "번째이다.");
+		
 		scan.close();
 	}
 
