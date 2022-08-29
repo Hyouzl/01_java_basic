@@ -134,14 +134,7 @@ public class LoopEx28_정답 {
 		 * #####
 		 */
 		
-		
-		for (i = 0; i <= (5/2); i++) {
-			for (j = i; j < (5/2); j++)
-			{
-				System.out.print(" ");
-			}
-		
- 		}
+
 
 		/*
 		 * 문제 7)
@@ -149,6 +142,14 @@ public class LoopEx28_정답 {
 		 *   ###
 		 *    #
 		 */
+		
+		int t = 0;
+		for (i = 0; i < 3; i++) {
+			for (k = 0; k < i; k++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
 
 		
 		
